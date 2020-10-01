@@ -1,0 +1,7 @@
+{
+    "modifyObstructiveCode": false,
+    "experimentalSourceRewriting": true,
+    "chromeWebSecurity": true,
+    "viewportWidth": 1440,
+    "viewportHeight": 900
+}
