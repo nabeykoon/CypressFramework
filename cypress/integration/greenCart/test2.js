@@ -1,9 +1,16 @@
 /// <reference types="Cypress" />
 
-describe('My second Test', () => {
-    it('My first test case', () => {
 
+describe('My second Test', () => {
+   
+    it('My first test case', () => {
+   
         cy.visit("https://www.rahulshettyacademy.com/seleniumPractise/#/");
+        Cypress.config({
+            "modifyObstructiveCode": true,
+            "experimentalSourceRewriting": true,
+            "chromeWebSecurity": true
+          })
         cy.get('.search-keyword').type('ca');
         cy.wait(2000);
         cy.get('.products').as('productsLocator');
@@ -19,6 +26,6 @@ describe('My second Test', () => {
 
         cy.get('.cart-icon > img').click();
         cy.contains('PROCEED TO CHECKOUT').click();
-        cy.contains('Place Order').click();
+        //cy.contains('Place Order').trigger('click');
     })
 })

@@ -69,6 +69,6 @@ describe('Home page Test suite', () => {
             .selectCountryfromList(this.data.country)
             .clickAgreementCheckbox()
             .clickPurchaseButton()
-            .getSuccessAlertText().should('include.text', 'Success! Thank you! Your order will be delivered in next few weeks :-).');
+            .getSuccessAlertText().should('include.text', 'Success! Thank you! Your order will be delivered in next few weeks :-).')
     })
 })

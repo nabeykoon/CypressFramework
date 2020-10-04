@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "testAll": "./node_modules/.bin/cypress run",
+    "testAllHeaded": "npm run testAll -- --headed",
+    "testAllChrome": "npm run testAll -- --browser chrome",
+    "testAllRecord": "npm run testAll -- --record --key 10279e7f-c152-4934-baf6-e280478b3a05",
+    "greenCartTest": "npm run testAll -- --spec \"cypress/integration/greenCart/*\""
   },
   "author": "Nadeera",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^5.2.0",
+    "cypress": "^5.3.0",
     "cypress-iframe": "^1.0.1"
   }
 }

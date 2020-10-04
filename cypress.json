@@ -7,5 +7,9 @@
   "env": {
     "url": "https://www.rahulshettyacademy.com/seleniumPractise/#/"
   },
+  "retries": {
+    "runMode": 0,
+    "openMode": 0
+  },
   "projectId": "mrh17y"
 }
