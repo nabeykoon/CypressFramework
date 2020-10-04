@@ -3,7 +3,7 @@
 describe('My First Test', () => {
     it('My first test case', () => {
 
-        cy.visit("https://www.rahulshettyacademy.com/seleniumPractise/#/");
+        cy.visit(Cypress.env('url'));
         cy.get('.search-keyword').type('ca');
 
         cy.wait(2000);

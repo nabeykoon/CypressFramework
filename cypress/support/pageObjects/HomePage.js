@@ -8,7 +8,7 @@ export class Homepage {
     }
 
     visit() {
-        cy.visit("https://www.rahulshettyacademy.com/angularpractice/");
+        cy.visit(Cypress.env('homePage_url'));
     }
 
     getNameTextField() {

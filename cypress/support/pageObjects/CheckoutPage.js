@@ -10,6 +10,6 @@ export class CheckoutPage {
     }
 
     getTotalPrice() {
-        return cy.get('h3 strong');
+        return cy.get('td.text-right h3 strong');
     }
 }

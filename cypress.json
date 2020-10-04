@@ -1,7 +1,11 @@
 {
-    "modifyObstructiveCode": false,
-    "experimentalSourceRewriting": true,
-    "chromeWebSecurity": true,
-    "viewportWidth": 1440,
-    "viewportHeight": 900
+  "modifyObstructiveCode": false,
+  "experimentalSourceRewriting": true,
+  "chromeWebSecurity": true,
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "env": {
+    "url": "https://www.rahulshettyacademy.com/seleniumPractise/#/"
+  },
+  "projectId": "mrh17y"
 }

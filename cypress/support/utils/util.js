@@ -1,4 +1,4 @@
-import { CheckoutPage } from '../pageObjects/CheckoutPage';
+import { CheckoutPage } from '../../support/pageObjects/CheckoutPage';
 
 const checkoutpage = new CheckoutPage();
 
@@ -11,24 +11,24 @@ export const sumOfProducts = () => {
             var number = amountText.split(" ");
             var number = number[1].trim();
             sum = Number(sum) + Number(number);
-        }).then(()=>{
+        }).then(() => {
             resolve(sum);
-        }) 
+        })
     })
-   
 }
 
 //Utility to create total price (number value) of all checkout products
 export const finalTotal = () => {
-    return new Promise((resolve) => {
+    return new Promise((resolveTotal) => {
         var total = 0;
         checkoutpage.getTotalPrice().then((element) => {
             const fullText = element.text();
             var number = fullText.split(" ");
             var number = number[1].trim();
             total = Number(number);
-        }).then(() => {
-            resolve(total);
+        }).then(()=>{
+            resolveTotal(total);
         })
+        
     })
 }
