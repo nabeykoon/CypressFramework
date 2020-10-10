@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:run": "cypress run",
+    "cy:verify": "cypress verify",
     "testAll": "./node_modules/.bin/cypress run",
     "testAllHeaded": "npm run testAll -- --headed",
     "testAllChrome": "npm run testAll -- --browser chrome",
