@@ -7,10 +7,10 @@ describe('API Test Suite', () => {
 
 
         let requestBody = {
-            "name": "Learn cypress 23423423",
-            "isbn": "BOOK5555",
-            "aisle": "2323",
-            "author": "Nadeera 345"
+            "name": "Learn cypress 666666",
+            "isbn": "BOOK8888",
+            "aisle": "8545",
+            "author": "Nadeera 987"
         }
 
         cy.request('POST', 'http://216.10.245.166/Library/Addbook.php', requestBody)
