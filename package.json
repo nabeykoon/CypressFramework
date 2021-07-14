@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run",
-    "cy:verify": "cypress verify",
+    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:verify": "./node_modules/.bin/cypress verify",
     "testAll": "./node_modules/.bin/cypress run",
     "testAllHeaded": "npm run testAll -- --headed",
     "testAllChrome": "npm run testAll -- --browser chrome",
