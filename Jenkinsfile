@@ -9,6 +9,7 @@ pipeline {
         stage('Install Dependencies') { 
             steps {
                 sh 'npm ci'
+                sh "sed -i 's/const VERIFY_TEST_RUNNER_TIMEOUT_MS.*;/const VERIFY_TEST_RUNNER_TIMEOUT_MS = 120000;/g' node_modules/cypress/lib/tasks/verify.js"
                 sh 'npm run cy:verify'
             }
         }
